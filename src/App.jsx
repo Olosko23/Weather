@@ -1,6 +1,5 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios';
-import dotenv from 'dotenv';
 
 function App() {
   const [data, setData] = useState({})
@@ -8,8 +7,7 @@ function App() {
   const [long, setLong] = useState([])
   const [location, setLocation] = useState('')
 
-  dotenv.config()
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${import.meta.env.REACT_APP_API_KEY}`
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=f71c26f8e39ecc81961a43ce3d7125e6`
 
   const getLocation = () =>{
     navigator.geolocation.getCurrentPosition(function(position) {

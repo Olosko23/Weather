@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios';
+import {} from 'react-icons/fa';
 
 function App() {
   const [data, setData] = useState({})
